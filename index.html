@@ -9,39 +9,25 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-png">
     <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <div >
-        <h1>Banking System</h1>
-        <h2>1,510,651 $</h2>
+        <h1>Banking System €/$</h1>
         <button id="settingsButton">settings</button>
     </div>
     <div class="container">
         <div id="settings">        
-            <input type="text" id="token" placeholder="Insert your API token">
-            <input type="text" id="preSet" placeholder="Write your preset request">
-            
-            <!-- Select for Max Tokens -->
-            <select id="maxTokens">
-                <option value="256">256 Tokens</option>
-                <option value="512">512 Tokens</option>
-                <option value="1024">1024 Tokens</option>
-                <option value="2048">2048 Tokens</option>
-            </select>
-        
-            <!-- Select for Models -->
-            <select id="model">
-                <option value="gemini-2.0-flash">Gemini 2.0 FLASH (Free)</option>
-            </select>
-        
-            <button id="clearApiToken">Delete API Token</button>
-            <button id="clearSet">Delete Pre request</button>
-            <button id="saveToken">Save Settings</button>
+            <input type="text" id="token" placeholder="insert you api token">
+            <input type="text" id="preSet" placeholder="write your preset request">
+            <button id="clearApiToken">delete API Token</button>
+            <button id="clearSet">delete Pre request</button>
+            <button id="saveToken">save settings</button>
+
+
         </div>
-        
 
         <input type="text" id="request" placeholder="Enter your prompt" />
         <button id="sendRequest">Send</button>
@@ -50,4 +36,4 @@
     </div>
 </body>
 
-</html>
+</html> 
