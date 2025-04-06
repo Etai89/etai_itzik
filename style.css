@@ -1,0 +1,174 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the chat interface */
+.container {
+    font-family: 'Roboto', sans-serif; /* Using a more modern font */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Heading */
+h1 ,h2{
+    text-align: center;
+    color: #4a90e2;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Input & Button Styles */
+input, button, select {
+    width: 300px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 12px;
+}
+
+/* Input for user request */
+#request {
+    width: 100%;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    font-size: 18px;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+/* Select Menu Styles */
+select {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+/* Chat Box */
+#chatBox {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-height: 400px;
+    word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Message Styles */
+.message {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 80%;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+/* User Message */
+.userMessage {
+    background-color: #4CAF50;
+    color: white;
+    align-self: flex-start;
+    border-radius: 20px;
+}
+
+/* Assistant Message */
+.assistantMessage {
+    background-color: #007BFF;
+    color: white;
+    align-self: flex-end;
+    border-radius: 20px;
+}
+
+/* Textarea for Response */
+#response {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Accessibility Focus Styles */
+:focus {
+    outline: 3px solid #FFD700;
+}
+
+#request:focus {
+    outline-color: #4CAF50;
+}
+
+button:focus {
+    outline-color: #FFD700;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    #chatBox {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    input, button, select {
+        font-size: 16px;
+    }
+
+    #response {
+        font-size: 16px;
+    }
+}

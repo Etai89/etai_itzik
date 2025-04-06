@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div >
+        <h1>Banking System</h1>
+        <h2>1,510,651 $</h2>
+        <button id="settingsButton">settings</button>
+    </div>
+    <div class="container">
+        <div id="settings">        
+            <input type="text" id="token" placeholder="Insert your API token">
+            <input type="text" id="preSet" placeholder="Write your preset request">
+            
+            <!-- Select for Max Tokens -->
+            <select id="maxTokens">
+                <option value="256">256 Tokens</option>
+                <option value="512">512 Tokens</option>
+                <option value="1024">1024 Tokens</option>
+                <option value="2048">2048 Tokens</option>
+            </select>
+        
+            <!-- Select for Models -->
+            <select id="model">
+                <option value="gemini-2.0-flash">Gemini 2.0 FLASH (Free)</option>
+            </select>
+        
+            <button id="clearApiToken">Delete API Token</button>
+            <button id="clearSet">Delete Pre request</button>
+            <button id="saveToken">Save Settings</button>
+        </div>
+        
+
+        <input type="text" id="request" placeholder="Enter your prompt" />
+        <button id="sendRequest">Send</button>
+        <button id="stopTTSButton" disabled>Stop Talking</button>
+        <div id="chatBox" style="height: 300px; overflow-y: auto;"></div>
+    </div>
+</body>
+
+</html>
