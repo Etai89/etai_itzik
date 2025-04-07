@@ -72,7 +72,6 @@ $(document).ready(async () => {
 
         $('#request').val('')
         // appendMessage('user', userInput.replace(predata, ""))
-// 'AIzaSyCPSJxU8dcbrnilAzjzZbNWG73sf3NWqeM'
         const token = JSON.parse(localStorage.getItem('G_api_token')) // ✅ Make sure this is valid
         if (!token) {
             appendMessage('assistant', 'Error: Missing Gemini API token.')
